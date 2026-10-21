@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <title>Tool Name</title>
+  </head>
+  <body>
+    <main class="app">
+      <div class="stage" id="stage"></div>
+
+      <aside class="panel">
+        <h1 class="logo">Tool Name</h1>
+
+        <section>
+          <h2>Shape</h2>
+          <div class="grid cols-3" id="shapes"></div>
+        </section>
+
+        <section>
+          <h2>Grid</h2>
+          <div class="sliders" id="grid-sliders"></div>
+          <button class="tile toggle" id="outline" aria-pressed="false">Outline</button>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h2>Motion</h2>
+            <button class="switch" id="motion-switch" role="switch" aria-checked="true" aria-label="Motion"></button>
+          </div>
+          <div class="sliders" id="motion-sliders"></div>
+        </section>
+
+        <section>
+          <h2>Quick Actions</h2>
+          <div class="grid cols-2">
+            <button class="tile" id="randomize">Randomize</button>
+            <button class="tile" id="reset">Reset</button>
+          </div>
+        </section>
+
+        <footer class="hint" id="hint" role="status">⌘S to save PNG</footer>
+      </aside>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
